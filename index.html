@@ -22,12 +22,13 @@
 
             // Construct the UPI payment link specifically for Google Pay with the callback URL
             var gpayPaymentLink = 'upi://pay?pa=' + upiId + '&pn=' + recipientName +
-                '&tr=' + transactionRef + '&am=' + amount + '&cu=' + currency +
+                 '&am=' + amount + '&cu=' + currency +
                 '&url=' + encodeURIComponent(callbackUrl);
+
 
             // Open the Google Pay UPI payment link
             window.location.href = gpayPaymentLink;
-            
+
         }
 
     </script>
