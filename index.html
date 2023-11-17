@@ -21,11 +21,12 @@
             var callbackUrl = 'https://payment-test-xi.vercel.app'; // Replace with your callback URL
 
             // Construct the UPI payment link specifically for Google Pay with the callback URL
-            var gpayPaymentLink = 'upi://pay?pa=' + upiId + '&pn=' + recipientName +
-                 '&am=' + amount + '&cu=' + currency +
-                '&url=' + encodeURIComponent(callbackUrl);
+            // var gpayPaymentLink = 'paytm://pay?pa=' + upiId + '&pn=' + recipientName +
+            //      '&am=' + amount + '&cu=' + currency +
+            //     '&url=' + encodeURIComponent(callbackUrl);
 
 
+            gpayPaymentLink = 'paytm://pay?pa=spfashub000@okhdfcbank&pn=Priyank%20Sutariya&am=100.00&cu=INR&url=https%3A%2F%2Fpayment-test-xi.vercel.app';
             // Open the Google Pay UPI payment link
             window.location.href = gpayPaymentLink;
 
